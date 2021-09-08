@@ -1,0 +1,69 @@
+/* * ============= Portofolio =============== */
+.portfolio {
+    &__container {
+        overflow: initial;
+    }
+
+    &__content {
+        padding: 0 1.5rem;
+    }
+
+    &__img {
+        width: 265px;
+        border-radius: .5rem;
+        justify-self: center;
+    }
+
+    &__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: $mb-0-5;
+    }
+
+    &__description {
+        margin-bottom: $mb-0-75;
+    }
+
+    &__button {
+        margin-right: 1rem;
+    }
+
+    &__button:hover .button__icon {
+        transform: translateX(.25rem);
+    }
+}
+
+.swiper {
+    &-button {
+        &-prev {
+            left: -0.5rem;
+        }
+
+        &-next {
+            right: -0.5rem;
+        }
+
+        &-prev::after,
+        &-next::after {
+            content: '';
+        }
+    }
+
+    &-portfolio-icon {
+        font-size: 2rem;
+        color: $first-color;
+    }
+
+    &-container-horizontal>&-pagination-bullets {
+        bottom: -2.5rem;
+    }
+
+    &-pagination-bullet-active {
+        background-color: $first-color;
+    }
+
+    &-button-prev,
+    &-button-next,
+    &-pagination-bullet {
+        outline: none;
+    }
+}

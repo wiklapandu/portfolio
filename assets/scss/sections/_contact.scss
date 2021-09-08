@@ -1,0 +1,26 @@
+.contact {
+    &__container {
+        row-gap: 3rem;
+    }
+
+    &__information {
+        display: flex;
+        margin-bottom: $mb-2;
+    }
+
+    &__icon {
+        font-size: 2rem;
+        color: $first-color;
+        margin-right: $mb-0-75;
+    }
+
+    &__title {
+        font-size: var(--h3-font-size);
+        font-weight: $font-medium;
+    }
+
+    &__subtitle {
+        font-size: var(--small-font-size);
+        color: $text-color-light;
+    }
+}
