@@ -148,17 +148,17 @@
                     </p>
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">02+</span>
+                            <span class="about__info-title">0<span class="item-count">2</span>+</span>
                             <span class="about__info-name">Years <br> experience</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">05+</span>
+                            <span class="about__info-title">0<span class="item-count">5</span>+</span>
                             <span class="about__info-name">Completed <br> project</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">05+</span>
+                            <span class="about__info-title">0<span class="item-count">5</span>+</span>
                             <span class="about__info-name">Companies <br> worked</span>
                         </div>
                     </div>
@@ -794,11 +794,19 @@
     <!-- ? ============ Plugin GSAP =============== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
     <!-- ? ============ Vanilla JS ================ -->
-    <script src="assets/js/main.js"></script>
     <script>
         gsap.registerPlugin(TextPlugin);
         gsap.to('.animation-text', { duration: 2, delay: 1, text: 'Hi, I\'m Wikla' });
+        gsap.from('.item-count', {
+            textContent: 0,
+            duration: .5,
+            scrollTrigger: '#about',
+            ease: Power1.easeIn,
+            snap: { textContent: 1 },
+            stagger: 1,
+        })
     </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
