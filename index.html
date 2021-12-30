@@ -109,7 +109,9 @@
                         </svg>
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'm Wikla</h1>
+                        <h1 class="home__title">
+                            <span class="animation-text">Hi,</span>
+                        </h1>
                         <h3 class="home__subtitle">Fullstack Developer</h3>
                         <p class="home__description">High level experience in back end development and front end
                             development
@@ -787,8 +789,16 @@
 
     <!-- ? ============ Swiper JS ================= -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- ? ============ GSAP ====================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- ? ============ Plugin GSAP =============== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
     <!-- ? ============ Vanilla JS ================ -->
     <script src="assets/js/main.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.animation-text', { duration: 2, delay: 1, text: 'Hi, I\'m Wikla' });
+    </script>
 </body>
 
 </html>
