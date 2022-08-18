@@ -1,33 +1,33 @@
 // ! ======== default =========
-@import './font';
-@import './variabel';
-@import './font-size';
-@import './reset-html';
-@import './section';
-@import './darkTheme';
-@import './layout';
-@import './nav';
-@import './home';
-@import './button';
+@import "./font";
+@import "./variabel";
+@import "./font-size";
+@import "./reset-html";
+@import "./section";
+@import "./darkTheme";
+@import "./layout";
+@import "./nav";
+@import "./home";
+@import "./button";
 
 // ! ======== Sections ==========
-@import './sections/about';
-@import './sections/skills';
-@import './sections/qualification';
-@import './sections/services';
-@import './sections/portofolio';
-@import './sections/contact';
+@import "./sections/about";
+@import "./sections/skills";
+@import "./sections/qualification";
+@import "./sections/services";
+@import "./sections/portofolio";
+@import "./sections/contact";
 
 // ! ======== Footer =============
-@import './sections/footer';
+@import "./sections/footer";
 
 // * Active links
 .active-link {
-    color: $first-color;
+  color: $first-color;
 }
 
-@import './scroll';
-@import './scrollbar';
-@import './devices/small';
-@import './devices/medium';
-@import './devices/large';
+@import "./scroll";
+@import "./scrollbar";
+@import "./devices/small";
+@import "./devices/medium";
+@import "./devices/large";
